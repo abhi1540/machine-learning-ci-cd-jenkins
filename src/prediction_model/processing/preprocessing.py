@@ -75,7 +75,6 @@ class CustomLabelEncoder(BaseEstimator,TransformerMixin):
     
     def transform(self,X):
         X=X.copy()
-	print("preprocessing steps")
         for feature in self.variables:
             X[feature] = X[feature].map(self.label_dict[feature])
         return X
