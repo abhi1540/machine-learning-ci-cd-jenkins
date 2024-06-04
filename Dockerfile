@@ -15,7 +15,7 @@ RUN chmod +x /code/src
 
 RUN pip install --no-cache-dir --upgrade -r code/src/requirements.txt
 
-EXPOSE 8005
+EXPOSE 8082
 
 WORKDIR /code/src
 
